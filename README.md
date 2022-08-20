@@ -20,6 +20,7 @@ docker-compose up -d
 ## Install composer dependencies and generate app key:
 
 docker exec -it hrtools-app composer install
+
 docker exec -it hrtools-app php artisan key:generate
 
 
