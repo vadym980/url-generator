@@ -22,5 +22,5 @@ class Links extends Model
     {
         return $this->url;
     }
-    
+
 }
