@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Links extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'url',
+        'url_short',
+    ];
+
+    protected $hidden = [
+        '_token',
+    ];
+
+    public function getUrl(): string
+    {
+        return $this->url;
+    }
+    
+}
