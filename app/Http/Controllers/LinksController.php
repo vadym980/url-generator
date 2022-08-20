@@ -6,7 +6,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Request\LinksHttpRequest;
 use App\Models\Links;
-use App\Repository\GetShortLinksRepository;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
