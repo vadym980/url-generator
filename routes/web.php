@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::post('/', [LinksController::class, 'store']);
+
+Route::get('/', [LinksController::class, 'index'])->name('welcome');
+
+Route::get('/{slug}',[LinksController::class, 'redirectUrl']);

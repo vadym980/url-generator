@@ -29,7 +29,7 @@ docker exec -it hrtools-app php artisan migrate
 
 
 
-Application server should be ready on `http://localhost:<APP_PORT>`
+## Application server should be ready on `http://localhost:<APP_PORT>`
 
 
 ## FAQ
